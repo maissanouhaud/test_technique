@@ -13,7 +13,7 @@ export class MailService {
       port: 465,
       secure: true,
       auth: {
-        user: 'apikey',
+        user: process.env.SENDGRID_USER,
         pass: process.env.SENDGRID_APIKEY,
       },
     });
