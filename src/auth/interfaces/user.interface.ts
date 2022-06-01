@@ -6,4 +6,6 @@ export interface User extends Document {
   readonly email: string;
   readonly society: string;
   readonly password: string;
+  readonly has_confirmed: string;
+  readonly confirmed_at: Date;
 }

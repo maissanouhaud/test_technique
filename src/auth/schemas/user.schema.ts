@@ -9,4 +9,6 @@ export const UserSchema = new mongoose.Schema({
   },
   society: String,
   password: String,
+  has_confirmed: Boolean,
+  confirmed_at: Date,
 });
